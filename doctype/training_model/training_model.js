@@ -14,7 +14,7 @@ frappe.ui.form.on("Training Model", {
         frm.add_custom_button(__('Training'), function() {
 
 
-            //CSV file to be added
+            //CSV file to be added here
             // console.log(frm.doc.training_label);
 
             //API CALL on click on Training button inside Train
