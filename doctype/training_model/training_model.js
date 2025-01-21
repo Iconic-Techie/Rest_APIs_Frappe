@@ -10,15 +10,16 @@
 frappe.ui.form.on("Training Model", {
     refresh: function(frm) {
 
-        console.log(frm.doc.training_label);
 
         frm.add_custom_button(__('Training'), function() {
 
 
+            //CSV file to be added
+            // console.log(frm.doc.training_label);
+
             //API CALL on click on Training button inside Train
             frappe.call({
-                //change path for method accordingly
-                method:"frappe.api.api.getTestData",
+                method:"frappe.api.train_api.getTestData",
                 args: {
                      training_label: frm.doc.training_label,
                      training_data: frm.doc.training_data,
@@ -34,6 +35,8 @@ frappe.ui.form.on("Training Model", {
 
         }, __("Train"));
     }
+
+});
 
     
 });
