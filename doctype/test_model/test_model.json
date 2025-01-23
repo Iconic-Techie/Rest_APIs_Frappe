@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-01-23 07:08:00.090144",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "expected_label",
+  "document_text",
+  "predicted_label",
+  "csv_file"
+ ],
+ "fields": [
+  {
+   "fieldname": "expected_label",
+   "fieldtype": "Data",
+   "label": "Expected Label"
+  },
+  {
+   "fieldname": "document_text",
+   "fieldtype": "Long Text",
+   "label": "Document Text"
+  },
+  {
+   "fieldname": "predicted_label",
+   "fieldtype": "Data",
+   "label": "Predicted Label",
+   "read_only": 1
+  },
+  {
+   "fieldname": "csv_file",
+   "fieldtype": "Attach",
+   "label": "CSV File"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-23 08:50:37.923482",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Test Model",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
