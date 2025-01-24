@@ -1,42 +1,47 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-01-08 20:51:21.302672",
+ "creation": "2025-01-24 03:20:19.925719",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "label_list_section",
-  "training_label",
-  "training_data"
+  "label",
+  "text",
+  "training_csv_file",
+  "testing_csv_file"
  ],
  "fields": [
   {
-   "fieldname": "label_list_section",
-   "fieldtype": "Section Break",
-   "label": "Label List"
+   "fieldname": "training_csv_file",
+   "fieldtype": "Attach",
+   "label": "Training CSV File"
   },
   {
-   "fieldname": "training_data",
-   "fieldtype": "Long Text",
+   "fieldname": "testing_csv_file",
+   "fieldtype": "Attach",
+   "label": "Testing CSV File"
+  },
+  {
+   "fieldname": "label",
+   "fieldtype": "Select",
    "in_list_view": 1,
-   "label": "Training Data",
+   "label": "Label",
+   "options": "Invoice\nCarrier Rate and Load Confirmation\nBill of Lading\nNotice of Assignment",
    "reqd": 1
   },
   {
-   "fieldname": "training_label",
-   "fieldtype": "Select",
-   "in_list_view": 1,
-   "label": "Training Label",
-   "options": "Invoice\nCarrier Rate and Load Confirmation\nBill of Lading\nNotice of Assignment",
+   "fieldname": "text",
+   "fieldtype": "Long Text",
+   "label": "Text",
    "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-08 23:52:11.232694",
+ "modified": "2025-01-24 13:52:25.543884",
  "modified_by": "Administrator",
- "module": "Text Classification",
- "name": "Training Model",
+ "module": "Library Management",
+ "name": "Classification of Text",
  "owner": "Administrator",
  "permissions": [
   {
